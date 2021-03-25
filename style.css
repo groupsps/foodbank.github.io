@@ -133,6 +133,7 @@ header .logo
 .text a:hover
 {
   letter-spacing: 6px;
+  background-color: #03a9f4;
 }
 .social
 {
