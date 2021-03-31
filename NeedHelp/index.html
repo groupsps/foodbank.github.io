@@ -12,7 +12,7 @@
         <script src="infoView.js"></script> 
     </head>
 
-    <body>
+    <body onload="addPantries()">
         <div class="menu">
             <ul>
               <li><a href="#">Home</a></li>
@@ -29,12 +29,12 @@
                 <div class="toggle"></div>
             </header>
             <div class="content-section">
-                <p class="content-title">Food Banks in L.A.</p>
+                <p class="content-title">Food Pantries in L.A.</p>
                 <button class="button-1" onclick="mapView()">Map View</button>
                 <button class="button-2" onclick="listView()">List View</button>
                 <div class="map-holder"></div>
-                <div class="list-holder">
-                    <h2 class="list-title">List</h2>
+                <div class="list-holder" id="list-holder">
+                    <h1 class="list-title">Lists</h1>
                 </div>
             </div>
         </section>
