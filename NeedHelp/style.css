@@ -10,20 +10,20 @@
 
 
 header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 40px 100px;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 header .page-title {
-    color: #fff;
-    text-transform: uppercase;
-    cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 .toggle {
   position: relative;
@@ -43,20 +43,23 @@ header .page-title {
   cursor: pointer;
 }
 .navBar {
-    position: absolute;
-    right: 0;
-    width: 100%;
-    min-height: 100vh;
-    padding: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #111;
-    transition: 0.5s;
-    z-index: 2;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
 }
 .navBar.active {
-    right: 300px;
+  right: 300px;
+}
+.body-color {
+  background-color: #111;
 }
 .menu {
   position: absolute;
@@ -163,16 +166,20 @@ header .page-title {
   background-color: #03a9f4;
   cursor: pointer;
 }
+.note-text {
+  margin-top: 1%;
+  color: #fff;
+  font-size: 12px;
+}
 .map-holder {
   border: none;
-  margin-top: 5%;
   height: 0px;
   width: 1100px;
   transition: 0.7s;
 }
 .map-holder.active {
   border: none;
-  margin-top: 5%;
+  margin-top: 1%;
   height: 600px;
   width: 1100px;
   transition: 0.5s;
@@ -224,5 +231,14 @@ header .page-title {
   text-decoration: underline;
   font-size: 28px;
   transition: 0.2s;
+  color: #03a9f4;
+}
+.infoWindow {
+  min-width: 150px;
+  min-height: auto;
+  text-align: left;
+}
+.infoWindow-title {
+  font-size: 15px;
   color: #03a9f4;
 }
